@@ -133,18 +133,24 @@ a,
 p,
 h2 {
   font-family: 'Oswald';
+  font-weight: normal;
+  text-decoration: none;
   letter-spacing: 4%;
   color: white;
 }
 a {
-  text-decoration: none;
   font-size: 2rem;
 }
 h2 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+button {
+  font-size: 2.3rem;
+  font-family: 'Oswald';
 }
 .wrapper {
   height: 100vh;
@@ -159,7 +165,6 @@ p {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  margin-bottom: 40px;
 }
 .top-content .logo {
   margin-top: 3rem;
@@ -183,6 +188,33 @@ p {
 .top-content .nav-slogan .nav {
   margin-right: 7%;
 }
+.top-content .nav-slogan .nav a:hover {
+  font-size: 2.1rem;
+  color: #eeb9eb;
+}
 .top-content .nav-slogan .slogan {
-  margin-right: 30%;
+  margin-right: 20%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+.mid-content {
+  margin: 0 auto;
+  margin-top: 5.5%;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 55%;
+}
+.mid-content .goto-app {
+  width: 30%;
+  height: 20%;
+  border-radius: 265px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+.mid-content .goto-app:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }

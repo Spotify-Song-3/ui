@@ -1,9 +1,11 @@
+
+
 .top-content {
     display: flex;
     flex-flow: row nowrap;
     // border: 1px solid green;
     justify-content: space-around;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     .logo {
         // border: 1px solid red;
@@ -28,15 +30,46 @@
 
         a {
             margin: 0rem 2rem;
+            
         }
 
         .nav {
             margin-right: 7%;
         }
 
-        .slogan {
-            margin-right: 30%;
+        .nav a:hover {
+            font-size: 2.1rem;
+            color: rgb(238, 185, 235);
         }
 
+        .slogan {
+            margin-right: 20%;
+            margin-left: 10%;
+            margin-bottom: 2%;
+        }
+
+    }
+}
+.mid-content {
+    margin: 0 auto;
+    // border: 1px solid red;
+    margin-top: 5.5%;
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 55%;
+
+    .goto-app {
+        width: 30%;
+        height: 20%;
+        border-radius: 265px;
+        background-color: rgba(255,255,255,.8);
+        border: none;
+    }
+    .goto-app:hover {
+        background-color: rgba(0, 0, 0, .8);
+        color: white;
     }
 }
