@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.wrapper {
+  font-size: 62.5%;
+}
+a,
+p,
+h2 {
+  font-family: 'Oswald';
+  font-weight: normal;
+  text-decoration: none;
+  letter-spacing: 4%;
+  color: white;
+}
+a {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+button {
+  font-size: 2rem;
+  font-family: 'Oswald';
+}
+.wrapper {
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/426976/pexels-photo-426976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+}
+.solid-color {
+  background-color: rgba(25, 16, 36, 0.5);
+  height: 100vh;
+}
+.top-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+.top-content .logo {
+  margin-top: 3rem;
+  margin-left: 4%;
+}
+.top-content .logo img {
+  width: 370px;
+  height: auto;
+}
+.top-content .nav-slogan {
+  width: 70%;
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.top-content .nav-slogan a {
+  margin: 0rem 2rem;
+}
+.top-content .nav-slogan .nav {
+  margin-right: 7%;
+}
+.top-content .nav-slogan .nav a:hover {
+  font-size: 2.1rem;
+  color: #bea8bd;
+}
+.top-content .nav-slogan .slogan {
+  margin-right: 20%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+}
+.mid-content {
+  margin: 0 auto;
+  margin-top: 5.5%;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 55%;
+}
+.mid-content .goto-app {
+  width: 300px;
+  height: 100px;
+  border-radius: 265px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+.mid-content .goto-app:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+@media (max-width: 1023px), (max-width: 651px) {
+  .wrapper {
+    height: 150vh;
+    background-image: url('https://images.pexels.com/photos/426976/pexels-photo-426976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center;
+  }
+  .solid-color {
+    background-color: rgba(25, 16, 36, 0.5);
+    height: 150vh;
+  }
+}
+@media (max-width: 1023px) {
+  .top-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-content .logo {
+    margin: 1% auto;
+  }
+  .top-content .nav-slogan {
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .top-content .nav-slogan .nav {
+    margin-right: 0%;
+    margin-bottom: 70px;
+  }
+  .top-content .nav-slogan .slogan {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 651px) {
+  .top-content .logo {
+    display: none;
+  }
+  .top-content .nav-slogan .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 50px;
+  }
+  .top-content .nav-slogan .nav a {
+    margin: 5% 0%;
+  }
+  .top-content .nav-slogan .slogan {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
