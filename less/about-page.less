@@ -1,5 +1,8 @@
 .view-height-1 {
     background-image: url("https://images.pexels.com/photos/736355/pexels-photo-736355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    // background-image: url("https://images.squarespace-cdn.com/content/v1/54de0068e4b0c54ef85cc7d8/1583351083934-C5BZ9KWW2WWTYTHE946V/ke17ZwdGBToddI8pDm48kG6DEqWFQGN86Yy_kIwYHV57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm2Ijq33Y_9Fgn47-_Jig6WN7nQoO4L--mj68p2odGiS_viNZMLDMLseLOtm9xj6uQ/WingSpan+Website.png?format=1000w");
+    // background-color: rgb(100, 200, 300);
+    background-size: cover;
     .opacity {
 
         background-color: rgba(25,16,36,.5);
@@ -12,6 +15,10 @@
             justify-content: flex-end;
             a {
                 padding: 0 2rem;
+            }
+            a:hover {
+                font-size: 2.1rem;
+                color: rgb(240, 240, 240);
             }
         }
         .team-underlined {
@@ -49,13 +56,14 @@
                 flex-flow: column nowrap;
                 align-items: center;
                 width: 500px;
-                // height: 800px;
+                height: 730px;
+                border: 2px solid black;
 
                 img {
                     border-radius: 1000px;
                     // border: 1px solid red;
                     margin: 12px 0px 20px 0px;
-                    height: 250px;
+                    height: 200px;
                 }
 
                 .name{
@@ -73,9 +81,12 @@
                 .about-box {
                     background-color: rgba(203, 200, 200, .7);
                     width: 95%;
+                    height: 550px;
                     margin-bottom: 10px;
                     display: flex;
                     flex-flow: column nowrap;
+                    justify-content: space-between;
+                    // border: 1px solid red;
                     p {
                         color: black;
                         padding: 10px;
@@ -89,13 +100,22 @@
 
                         display: flex;
                         justify-content: center;
+                        
+                        
+                        // border: 1px solid red;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
                     
                         .linkedin-icon,.github-icon {
                             font-size: 3rem;
                             padding: 10px 5px;
-                            a {
-                                text-decoration: none;
-                            }
+                         
+                        }
+                        .linkedin-icon:hover,.github-icon:hover {
+                            color: white;
+                         
                         }
                         
                         .github-icon {

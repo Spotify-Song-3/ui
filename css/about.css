@@ -4621,6 +4621,7 @@ button {
 }
 .view-height-1 {
   background-image: url("https://images.pexels.com/photos/736355/pexels-photo-736355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
 }
 .view-height-1 .opacity {
   background-color: rgba(25, 16, 36, 0.5);
@@ -4633,6 +4634,10 @@ button {
 }
 .view-height-1 .opacity .nav a {
   padding: 0 2rem;
+}
+.view-height-1 .opacity .nav a:hover {
+  font-size: 2.1rem;
+  color: #f0f0f0;
 }
 .view-height-1 .opacity .team-underlined {
   width: 400px;
@@ -4664,11 +4669,13 @@ button {
   flex-flow: column nowrap;
   align-items: center;
   width: 500px;
+  height: 730px;
+  border: 2px solid black;
 }
 .view-height-1 .opacity .about-us .about-me img {
   border-radius: 1000px;
   margin: 12px 0px 20px 0px;
-  height: 250px;
+  height: 200px;
 }
 .view-height-1 .opacity .about-us .about-me .name {
   font-size: 1.9rem;
@@ -4685,9 +4692,11 @@ button {
 .view-height-1 .opacity .about-us .about-me .about-box {
   background-color: rgba(203, 200, 200, 0.7);
   width: 95%;
+  height: 550px;
   margin-bottom: 10px;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
 }
 .view-height-1 .opacity .about-us .about-me .about-box p {
   color: black;
@@ -4700,14 +4709,18 @@ button {
   display: flex;
   justify-content: center;
 }
+.view-height-1 .opacity .about-us .about-me .about-box .network-links a {
+  text-decoration: none;
+  color: black;
+}
 .view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon,
 .view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon {
   font-size: 3rem;
   padding: 10px 5px;
 }
-.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon a,
-.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon a {
-  text-decoration: none;
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon:hover,
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon:hover {
+  color: white;
 }
 .view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon {
   font-weight: normal;
