@@ -221,6 +221,7 @@ button {
   border-radius: 265px;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
+  text-decoration: none;
 }
 .mid-content .goto-app:hover {
   background-color: rgba(0, 0, 0, 0.8);
