@@ -4686,6 +4686,8 @@ button {
   background-color: rgba(203, 200, 200, 0.7);
   width: 95%;
   margin-bottom: 10px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 .view-height-1 .opacity .about-us .about-me .about-box p {
   color: black;
@@ -4694,7 +4696,20 @@ button {
   line-height: 2.1rem;
   font-size: 1.3rem;
 }
-.view-height-1 .opacity .about-us .about-me .about-box .github-icon {
+.view-height-1 .opacity .about-us .about-me .about-box .network-links {
+  display: flex;
+  justify-content: center;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon,
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon {
+  font-size: 3rem;
+  padding: 10px 5px;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon a,
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon a {
+  text-decoration: none;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon {
   font-weight: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -4703,15 +4718,36 @@ button {
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
 }
-.view-height-1 .opacity .about-us .about-me .about-box .github-icon.fa-pull-left {
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon.fa-pull-left {
   margin-right: 0.3em;
 }
-.view-height-1 .opacity .about-us .about-me .about-box .github-icon.fa-pull-right {
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon.fa-pull-right {
   margin-left: 0.3em;
 }
-.view-height-1 .opacity .about-us .about-me .about-box .github-icon:before {
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .github-icon:before {
   content: "\f09b";
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon {
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon.fa-pull-left {
+  margin-right: 0.3em;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon.fa-pull-right {
+  margin-left: 0.3em;
+}
+.view-height-1 .opacity .about-us .about-me .about-box .network-links .linkedin-icon:before {
+  content: "\f08c";
 }

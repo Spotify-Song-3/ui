@@ -126,12 +126,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.wrapper {
+.body {
   font-size: 62.5%;
 }
 a,
 p,
-h2 {
+h1,
+h2,
+h3 {
   font-family: 'Oswald';
   font-weight: normal;
   text-decoration: none;
@@ -141,8 +143,14 @@ h2 {
 a {
   font-size: 2rem;
 }
+h1 {
+  font-size: 2.9rem;
+}
 h2 {
   font-size: 2.8rem;
+}
+h3 {
+  font-size: 2.7rem;
 }
 p {
   font-size: 1.9rem;
@@ -190,7 +198,7 @@ button {
 }
 .top-content .nav-slogan .nav a:hover {
   font-size: 2.1rem;
-  color: #bea8bd;
+  color: #f0f0f0;
 }
 .top-content .nav-slogan .slogan {
   margin-right: 20%;

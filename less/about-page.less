@@ -74,6 +74,8 @@
                     background-color: rgba(203, 200, 200, .7);
                     width: 95%;
                     margin-bottom: 10px;
+                    display: flex;
+                    flex-flow: column nowrap;
                     p {
                         color: black;
                         padding: 10px;
@@ -82,18 +84,41 @@
                         font-size: 1.3rem;
                     }
 
-                    .github-icon {
-                        .fa-icon;
-                        .fas;
-                      
-                        &:before {
-                          content: @fa-var-github;
+
+                    .network-links {
+
+                        display: flex;
+                        justify-content: center;
+                    
+                        .linkedin-icon,.github-icon {
+                            font-size: 3rem;
+                            padding: 10px 5px;
+                            a {
+                                text-decoration: none;
+                            }
                         }
-
+                        
+                        .github-icon {
+                            .fa-icon;
+                            .fab;
+    
+                            &:before {
+                              content: @fa-var-github;
+                            }
+    
+                        }
+                        
+                        .linkedin-icon {
+                            .fa-icon;
+                            .fab;
+                            
+                            &:before {
+                                content: @fa-var-linkedin;
+                            }
+                        }
                     }
-                    // .linkedin-icon {
 
-                    // }
+                    
                     
                 }
             }
